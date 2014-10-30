@@ -1,0 +1,24 @@
+<div class="techCrunch-wrapper" id="TechCrunch">
+    <div class="heading">
+        <h1>{{rss.title}}</h1>
+        <h4><a href="{{rss.link}}">{{rss.description}}</a></h4>
+    </div>
+    <div class="content">
+        <div class="row">
+
+            <div class="col-md-6 news-item" ng-repeat="feed in rss.entries">
+                <div class="news-wrapper">
+                    <h4><a href="{{feed.link}}">{{feed.title}}</a></h4>
+                    <p>
+
+                        <span class="label label-info" ng-repeat="category in feed.categories"> {{category}} </span>
+
+                    </p>
+                    <div ng-bind-html="feed.content | unsafe"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

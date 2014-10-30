@@ -1,0 +1,20 @@
+<div id="HackerNews">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3><a href="{{rss.link}}" target="_blank">{{rss.title}}</a></h3>
+        </div>
+        <div class="panel-body">
+            <div class="viewport">
+                <ul>
+
+                    <li ng-repeat="feed in rss.entries">
+                        <h4>{{feed.title}}</h4>
+                        <span> see it on the <a href="{{feed.link}}" target="_blank">link</a></span>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

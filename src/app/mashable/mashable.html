@@ -1,0 +1,17 @@
+<div class="Mashable-wrapper" id="Mashable">
+    <div class="heading">
+        <a href="{{rss.link}}" target="_blank"><h2>{{rss.title}}</h2></a>
+        <small>{{rss.description}}</small>
+    </div>
+    <div class="content">
+        <div class="viewport">
+            <ul>
+                <li ng-repeat="feed in rss.entries">
+                    <h4><a href="{{feed.link}}" target="_blank">{{feed.title}}</a></h4>
+                    <div ng-bind-html="feed.content | unsafe"></div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

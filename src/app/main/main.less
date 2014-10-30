@@ -1,0 +1,185 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+.current-date{
+  color: #fff;
+  margin-right: 10px !important;
+}
+
+.contact-page{
+  background: #000000;
+  color: #fff
+}
+
+#HackerNews {
+  h3{
+    margin: 5px 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+
+    li {
+      border-bottom: 1px solid rgb(218, 218, 218);;
+      padding-bottom: 5px;
+      list-style: none !important;
+
+      &:last-child{
+        border-bottom: none;
+      }
+
+      span {
+        color: rgb(145, 145, 145);
+      }
+    }
+  }
+}
+
+
+#Mashable {
+  .heading {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      h2 {
+        margin-top: 0;
+        border-bottom: 3px solid;
+      }
+    }
+  }
+  .content {
+    margin-top: 20px;
+    padding-right: 10px;
+
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      position: relative;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 5px solid rgb(240, 240, 240);
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-top: 1px solid #C3C3C3;
+        bottom: -3px;
+      }
+
+      &:after {
+        clear: both;
+      }
+
+      div > img {
+        width: 300px;
+        float: left;
+        padding-right: 20px;
+        padding-bottom: 10px;
+
+        &[width="1"] {
+          display: none
+        }
+      }
+
+      p {
+        margin-bottom: 5px;
+        img {
+          display: none;
+        }
+      }
+      div[style*=float] {
+        display: none;
+      }
+      iframe {
+        height: 157px !important;
+        width: 260px !important;
+      }
+    }
+  }
+}
+
+#HuffingtonPost {
+  h1, .page-header {
+    margin-top: 10px;
+  }
+  .page-header{
+    margin-bottom: 40px;
+  }
+  .news-item {
+    margin-bottom: 20px;
+  }
+  .short-description-wrapper {
+    outline: 1px solid rgb(240, 240, 240);
+    padding: 5px;
+    box-shadow: 2px 2px 6px rgb(200, 195, 195);
+  }
+
+  .see-more {
+    margin: 5px 0;
+  }
+  .modal {
+
+    .modal-footer {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#TechCrunch {
+  h1 {
+    margin-top: 0;
+  }
+  .heading {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .content {
+    .news-item {
+      margin-bottom: 30px;
+
+      &:nth-of-type(2n+1) {
+        clear: both;
+      }
+    }
+    .news-wrapper {
+      box-shadow: inset 0px 0px 14px rgb(226, 210, 210);
+      padding: 3px 10px;
+      border-radius: 12px;
+
+      div > img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+
+        &[height="1"] {
+          display: none;
+        }
+      }
+      .label {
+        margin-right: 5px;
+      }
+    }
+  }
+
+}
