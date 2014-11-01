@@ -2,9 +2,17 @@
 
 angular.module('agy')
     .controller('HackerNewsCtrl', ['$scope', 'RSS', function ($scope, RSS) {
-        RSS.getFeed('Hacker News', function(data){
+        var name = 'Hacker News';
+
+        function addToScope(data) {
             $scope.rss = data;
-        });
+        }
+
+        RSS.getFeed(name, addToScope);
+
+        $scope.updateRSS = function () {
+            RSS.update(name, addToScope);
+        }
     }])
     .filter('unsafe', function($sce){
         return function(val){

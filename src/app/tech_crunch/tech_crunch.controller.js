@@ -4,7 +4,7 @@
 
 angular.module('agy')
     .controller('TechCrunchCtrl', ['$scope', 'RSS',
-        function($scope, RSS) {
+        function ($scope, RSS) {
             var name = 'TechCrunch';
 
             function addToScope(data) {
@@ -13,15 +13,13 @@ angular.module('agy')
 
             RSS.getFeed(name, addToScope);
 
-            $scope.updateRSS = function() {
-                RSS.update(name, function (data) {
-                    $scope.rss = data;
-                });
+            $scope.updateRSS = function () {
+                RSS.update(name, addToScope);
             }
         }
     ])
-    .filter('unsafe', function($sce) {
-        return function(val) {
+    .filter('unsafe', function ($sce) {
+        return function (val) {
             return $sce.trustAsHtml(val);
         };
     });

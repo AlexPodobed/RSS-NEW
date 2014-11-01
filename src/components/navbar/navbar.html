@@ -1,18 +1,26 @@
-<nav class="navbar navbar-static-top navbar-inverse" ng-controller="NavbarCtrl">
-    <div class="navbar-header">
-        <a class="navbar-brand" href="/">
-            <span class="glyphicon glyphicon-home"></span> RSS Feed
-        </a>
-    </div>
+<nav class="navbar navbar-default navbar-static-top navbar-inverse" ng-controller="NavbarCtrl" role="navigation">
+    <div class="container-fluid" id="navfluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ng-href="#" ui-sref="home">
+                <span class="glyphicon glyphicon-home"></span> RSS Feed
+            </a>
+        </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-        <ul class="nav navbar-nav">
-            <li ng-class="{active:isActive('/')}"><a ng-href="#" ui-sref="home">Home</a></li>
-            <li ng-class="{active:isActive('/cnn')}"><a ng-href="#" ui-sref="cnn">CNN</a></li>
-            <li ng-class="{active:isActive('/hacker_news')}"><a ng-href="#" ui-sref="hacker_news">Hacker News</a></li>
-            <li ng-class="{active:isActive('/huffington_post')}"><a ng-href="#" ui-sref="huffington_post">Huffington Post</a></li>
-            <li ng-class="{active:isActive('/mashable')}"><a ng-href="#" ui-sref="mashable">Mashable</a></li>
-            <li ng-class="{active:isActive('/tech_crunch')}"><a ng-href="#" ui-sref="tech_crunch">Tech Crunch</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active:isActive('/')}"><a ng-href="#" ui-sref="home">Home</a></li>
+                <li ng-class="{active:isActive('/cnn')}"><a ng-href="#" ui-sref="cnn">CNN</a></li>
+                <li ng-class="{active:isActive('/hacker_news')}"><a ng-href="#" ui-sref="hacker_news">Hacker News</a></li>
+                <li ng-class="{active:isActive('/huffington_post')}"><a ng-href="#" ui-sref="huffington_post">Huffington Post</a></li>
+                <li ng-class="{active:isActive('/mashable')}"><a ng-href="#" ui-sref="mashable">Mashable</a></li>
+                <li ng-class="{active:isActive('/tech_crunch')}"><a ng-href="#" ui-sref="tech_crunch">Tech Crunch</a></li>
+            </ul>
+        </div>
     </div>
 </nav>

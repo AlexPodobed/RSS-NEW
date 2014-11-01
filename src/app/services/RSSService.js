@@ -13,17 +13,17 @@ angular.module('agy')
                 "RIA": "http://ria.ru/export/rss2/world/index.xml"
             };
 
-            function compare(arr1, arr2) {
-                var result = arr1;
-                for (var i = 0; i < arr2.length; i++) {
-                    for (var j = 0; j < result.length; j++) {
-                        if (arr2[i]['title'] === result[j]['title']) {
-                            result.splice(j, 1)
-                        }
-                    }
-                }
-                return result
-            }
+//            function compare(arr1, arr2) {
+//                var result = arr1;
+//                for (var i = 0; i < arr2.length; i++) {
+//                    for (var j = 0; j < result.length; j++) {
+//                        if (arr2[i]['title'] === result[j]['title']) {
+//                            result.splice(j, 1)
+//                        }
+//                    }
+//                }
+//                return result
+//            }
 
             return {
                 fetch: function(name) {
